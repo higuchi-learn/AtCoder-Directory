@@ -3,13 +3,13 @@
 #include <atcoder/dsu>
 #include <cstdio>
 
+#define rep0(i, n) for (int i = 0; i < (n); i++)
+#define rep1(i, n) for (int i = 1; i <= (n); i++)
+#define all(v) v.begin(), v.end()
+
 using namespace std;
 using namespace atcoder;
 using ll = long long;
-
-#define rep0(i, n) for (ll i = 0; i < (n); i++)
-#define rep1(i, n) for (ll i = 1; i <= (n); i++)
-#define all(v) v.begin(), v.end()
 
 ll GCD(ll A, ll B) {
   while (true) {
@@ -35,4 +35,14 @@ ll nCr(ll N, ll R) {
   return res;
 }
 
-int main() {}
+int main()
+{
+  string S;
+  cin >> S;
+  for (int i = 0; i < S.length(); i++)
+  {
+    if (isupper(S[i]))
+      cout << S[i];
+  }
+  cout << endl;
+}

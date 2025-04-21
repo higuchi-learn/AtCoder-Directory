@@ -35,4 +35,27 @@ ll nCr(ll N, ll R) {
   return res;
 }
 
-int main() {}
+int main() {
+  ll N, M, K, B, ans = 0;
+  cin >> N >> M;
+  vector<vector<ll>> A(M);
+  vector<vector<ll>> id(N + 1);
+  vector<ll> cnt(M);
+  rep0(i, M) {
+    cin >> K;
+    cnt[i] = K;
+    A[i].resize(K);
+    for (auto &x : A[i]) {
+      cin >> x;
+      id[x].push_back(i);
+    }
+  }
+  rep0(i, N) {
+    cin >> B;
+    for (auto id : id[B]) {
+      cnt[id] -= 1;
+      if (cnt[id] == 0) ans += 1;
+    }
+    cout << ans << endl;
+  }
+}

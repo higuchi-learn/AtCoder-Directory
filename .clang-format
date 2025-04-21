@@ -1,0 +1,7 @@
+BasedOnStyle: Google
+BreakBeforeBraces: Attach
+IndentWidth: 2
+
+AllowShortIfStatementsOnASingleLine: Always
+AllowShortElseIfStatementsOnASingleLine: Always
+AllowShortElseStatementsOnASingleLine: true
