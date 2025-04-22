@@ -36,7 +36,9 @@ ll nCr(ll N, ll R) {
 }
 
 int main() {
-  ll N;
-  cin >> N;
-  
+  ll S;
+  cin >> S;
+  if (200 <= S && S <= 299) cout << "Success" << endl;
+  else
+    cout << "Failure" << endl;
 }

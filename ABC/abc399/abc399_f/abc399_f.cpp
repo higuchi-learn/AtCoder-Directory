@@ -35,8 +35,4 @@ ll nCr(ll N, ll R) {
   return res;
 }
 
-int main() {
-  ll N;
-  cin >> N;
-  
-}
+int main() {}

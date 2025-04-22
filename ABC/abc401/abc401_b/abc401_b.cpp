@@ -36,7 +36,15 @@ ll nCr(ll N, ll R) {
 }
 
 int main() {
-  ll N;
+  ll N, Ans = 0;
+  string S;
+  bool flag = false;
   cin >> N;
-  
+  rep1(i, N) {
+    cin >> S;
+    if (S == "login") flag = true;
+    if (S == "logout") flag = false;
+    if (S == "private" && flag == false) Ans++;
+  }
+  cout << Ans << endl;
 }

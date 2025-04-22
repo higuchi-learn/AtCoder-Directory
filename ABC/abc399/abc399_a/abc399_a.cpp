@@ -36,7 +36,16 @@ ll nCr(ll N, ll R) {
 }
 
 int main() {
-  ll N;
-  cin >> N;
-  
+  int n, h = 0;
+  cin >> n;
+  string s, t;
+  cin >> s;
+  cin >> t;
+
+  for (int i = 0; i < n; i++) {
+    if (s[i] != t[i]) {
+      h++;
+    }
+  }
+  cout << h;
 }
