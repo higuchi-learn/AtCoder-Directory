@@ -35,4 +35,28 @@ ll nCr(ll N, ll R) {
   return res;
 }
 
-int main() {}
+int main() {
+  ll N, r = 1;
+  cin >> N;
+  vector<ll> P(N);
+  vector<ll> ans(N);
+  for (auto &i : P) cin >> i;
+  for (auto &i : ans) i = 0;
+  while (1) {
+    ll Max = 0;
+    rep0(i, N) {
+      if (ans[i]) continue;
+      Max = max(Max, P[i]);
+    }
+    if (Max == 0) break;
+    ll count = 0;
+    rep0(i, N) {
+      if (P[i] == Max) {
+        ans[i] = r;
+        count += 1;
+      }
+    }
+    r += count;
+  }
+  rep0(i, N) cout << ans[i] << "\n";
+}
