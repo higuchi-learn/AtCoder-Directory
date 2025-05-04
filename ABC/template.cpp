@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 
 #include <atcoder/dsu>
-#include <cstdio>
 
 using namespace std;
 using namespace atcoder;
