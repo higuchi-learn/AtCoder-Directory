@@ -37,12 +37,5 @@ ll nCr(ll N, ll R) {
 
 int main() {
   // format維持用コメント
-  ll N;
-  ll cnt=0;
-  cin >> N;
-  vector<ll> P(N);
-  for (int i=0; i<N; i++){
-    if (P[i]>P[i+1])
-  }
   return 0;
 }
